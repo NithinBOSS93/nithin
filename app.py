@@ -98,7 +98,7 @@ def split_into_chunks(raw_text):
 
 
 def create_vector_store(chunks, api_key):
-    embeddings = GeminiEmbeddings(api_key="AIzaSyBAWb7ewDiTKeFQpqEOkxc9gX9IXhyrPY4")
+    embeddings = GeminiEmbeddings(api_key="api_key")
     return FAISS.from_texts(texts=chunks, embedding=embeddings)
 
 
